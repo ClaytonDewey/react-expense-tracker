@@ -1,4 +1,29 @@
+import { Button, Flex, Heading } from '@chakra-ui/react';
+import { Summary, ExpenseView } from '.';
+
 const Main = () => {
-  return <div>Main</div>;
+  return (
+    <Flex textAlign={'center'} flexDirection={'column'} pr={'5'} pl={'5'}>
+      <Flex alignItems={'center'} justifyContent={'space-between'} mt={'12'}>
+        <Heading
+          color={'blue.400'}
+          display={['none', 'block', 'block', 'block', 'block']}>
+          Expense Tracker
+        </Heading>
+
+        <Flex alignItems={'center'}>
+          <Button bg={'blue.300'} color={'black'} ml={'4'}>
+            Add New Transaction
+          </Button>
+        </Flex>
+      </Flex>
+      <Summary />
+
+      <Flex>
+        <ExpenseView />
+        <ExpenseView />
+      </Flex>
+    </Flex>
+  );
 };
 export default Main;
