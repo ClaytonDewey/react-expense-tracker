@@ -66,7 +66,7 @@ const Summary = ({ isOpen, onClose }) => {
           alignItems={'center'}
           justifyContent={'center'}>
           <Heading>Chart</Heading>
-          {/* <TransactionChartSummary /> */}
+          <TransactionChartSummary expense={100} income={1000} />
         </Box>
       </Flex>
       <TransactionForm isOpen={isOpen} onClose={onClose} />
