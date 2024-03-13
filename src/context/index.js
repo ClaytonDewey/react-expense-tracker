@@ -23,8 +23,6 @@ export default function GlobalState({ children }) {
     ]);
   };
 
-  console.log(allTransactions);
-
   return (
     <GlobalContext.Provider
       value={{
