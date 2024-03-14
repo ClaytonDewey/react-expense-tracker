@@ -35,7 +35,7 @@ const ExpenseView = ({ type, data }) => {
               {item.description}
             </Text>
           </Flex>
-          <Text>{item.amount}</Text>
+          <Text>${item.amount}</Text>
         </Flex>
       ))}
     </Box>
